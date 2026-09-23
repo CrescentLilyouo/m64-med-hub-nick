@@ -1,39 +1,7 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>臨床計算器｜臨床醫學知識整理</title><link rel="stylesheet" href="../../assets/site.css"></head><body><header class="site-header"><div class="inner"><a class="site-title" href="../../index.html">臨床醫學知識整理</a><nav><a href="../../index.html">首頁</a><a href="../index.html">內科</a></nav></div></header><main class="page-shell content-page"><div class="breadcrumbs"><a href="../../index.html">首頁</a> › <a href="../index.html">內科</a> › <a href="index.html">腎臟內科</a> › 計算器</div><div class="page-hero"><h1>臨床計算器</h1><p>目前包含 free-water deficit 與 estimated osmolality / tonicity。</p></div><div class="back-row"><a href="index.html">← 回腎臟內科</a></div><section class="section searchable" id="calculators" data-keywords="calculator 計算器 water deficit osmolality corrected sodium glucose">
-      <h2>臨床計算器（教育用途）</h2>
-      <div class="grid">
-        <div class="card full calc">
-          <h3>Free-water deficit</h3>
-          <div class="calc-grid">
-            <div><label>體重 kg<input id="fwWeight" type="number" value="60" min="1" step="0.1"></label></div>
-            <div><label>TBW coefficient<select id="fwCoeff"><option value="0.6">0.60 成人男性常用粗估</option><option value="0.5" selected>0.50 成人女性/較保守粗估</option><option value="0.45">0.45 高齡/較低 TBW 粗估</option><option value="0.4">0.40 明顯 water-depleted 粗估</option></select></label></div>
-            <div><label>Current Na mmol/L<input id="fwNa" type="number" value="160" step="0.1"></label></div>
-            <div><label>Target Na mmol/L<input id="fwTarget" type="number" value="140" step="0.1"></label></div>
-          </div>
-          <button onclick="calcWaterDeficit()">計算</button><div class="result" id="fwResult">—</div>
-        </div>
-        <div class="card full calc">
-          <h3>Estimated osmolality / tonicity</h3>
-          <div class="calc-grid">
-            <div><label>Na mmol/L<input id="osNa" type="number" value="140"></label></div>
-            <div><label>Glucose mg/dL<input id="osGlu" type="number" value="100"></label></div>
-            <div><label>BUN mg/dL<input id="osBun" type="number" value="14"></label></div>
-          </div>
-          <button onclick="calcOsm()">計算</button><div class="result" id="osResult">—</div>
-        </div>
-      </div>
-      <div class="callout warn">計算器只提供學習與初步估算，不應直接用來開立個別病人的輸液或 dialysis prescription。真正治療必須依 serial Na、尿量、ongoing losses、volume status 與監測結果調整。</div>
-    </section><script>
-function calcWaterDeficit(){
-  const w=parseFloat(document.getElementById('fwWeight').value),c=parseFloat(document.getElementById('fwCoeff').value),na=parseFloat(document.getElementById('fwNa').value),t=parseFloat(document.getElementById('fwTarget').value);
-  const out=document.getElementById('fwResult');
-  if(!w||!c||!na||!t||na<=0||t<=0){out.textContent='請輸入有效數值';return}
-  const tbw=w*c, deficit=tbw*(na/t-1);
-  out.innerHTML=`TBW ≈ <b>${tbw.toFixed(1)} L</b>；估計 free-water deficit ≈ <b>${deficit.toFixed(2)} L</b>。這是到 target Na 的理論 deficit，不代表應一次補入；需依 ongoing losses、其他輸液、尿量與 serial Na 調整。`;
-}
-function calcOsm(){
-  const na=parseFloat(document.getElementById('osNa').value),g=parseFloat(document.getElementById('osGlu').value),b=parseFloat(document.getElementById('osBun').value),out=document.getElementById('osResult');
-  if([na,g,b].some(x=>Number.isNaN(x))){out.textContent='請輸入有效數值';return}
-  const osm=2*na+g/18+b/2.8, ton=2*na+g/18;
-  out.innerHTML=`Estimated osmolality ≈ <b>${osm.toFixed(1)} mOsm/kg</b>；effective osmolality / tonicity ≈ <b>${ton.toFixed(1)} mOsm/kg</b>。`;
-}
-</script><footer class="footer">臨床醫學教育與複習用途；實際診療請依病人情境、最新 guideline 與院內規範判斷。</footer></div></body></html>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>臨床計算器｜臨床醫學知識整理</title><link rel="stylesheet" href="../../assets/site.css"></head><body><header class="site-header"><div class="inner"><a class="site-title" href="../../index.html">臨床醫學知識整理</a><nav><a href="../../index.html">首頁</a><a href="../index.html">內科</a></nav></div></header><main class="page-shell content-page"><div class="breadcrumbs"><a href="../../index.html">首頁</a> › <a href="../index.html">內科</a> › <a href="index.html">腎臟內科</a> › 計算器</div><div class="page-hero"><h1>臨床計算器</h1><p>Free-water deficit、osmolality / tonicity 與 hyperglycemia corrected Na；每個工具都附上用途與限制。</p></div><div class="back-row"><a href="index.html">← 回腎臟內科</a></div><section class="section"><h2>計算器怎麼用？</h2><p class="lead">計算器的目的不是取代臨床判斷，而是快速建立「量級」。每個結果都應該回到 serial labs、U/O、volume status 與治療反應。</p>
+<div class="grid"><div class="card full calc"><h3>1｜Free-water deficit</h3><p>用於 hypernatremia 的起始估算。Target Na 不代表一次要達到的 Na，而是公式中的理論終點。</p><div class="calc-grid"><div><label>體重 kg<input id="fwWeight" type="number" value="60" min="1" step="0.1"></label></div><div><label>TBW coefficient<select id="fwCoeff"><option value="0.6">0.60 成人男性常用粗估</option><option value="0.5" selected>0.50 成人女性/較保守粗估</option><option value="0.45">0.45 高齡/較低 TBW 粗估</option><option value="0.4">0.40 明顯 water-depleted 粗估</option></select></label></div><div><label>Current Na mmol/L<input id="fwNa" type="number" value="160" step="0.1"></label></div><div><label>Target Na mmol/L<input id="fwTarget" type="number" value="140" step="0.1"></label></div></div><button onclick="calcWaterDeficit()">計算</button><div class="result" id="fwResult">—</div></div>
+<div class="card full calc"><h3>2｜Estimated osmolality / tonicity</h3><p>Osmolality 包含 BUN；tonicity 排除多數情境下的 ineffective osmole urea，更接近跨細胞水移動。</p><div class="calc-grid"><div><label>Na mmol/L<input id="osNa" type="number" value="140"></label></div><div><label>Glucose mg/dL<input id="osGlu" type="number" value="100"></label></div><div><label>BUN mg/dL<input id="osBun" type="number" value="14"></label></div></div><button onclick="calcOsm()">計算</button><div class="result" id="osResult">—</div></div>
+<div class="card full calc"><h3>3｜Hyperglycemia 時的 corrected Na（估算範圍）</h3><p>高 glucose 會把水拉到 ECF，使 measured Na 下降。常見 correction factor 約每 glucose 高於 100 mg/dL 100 單位，Na 加回 1.6–2.4 mmol/L；不同 glucose range 與研究使用值不同。</p><div class="calc-grid"><div><label>Measured Na mmol/L<input id="cgNa" type="number" value="128"></label></div><div><label>Glucose mg/dL<input id="cgGlu" type="number" value="500"></label></div></div><button onclick="calcCorrectedNa()">計算</button><div class="result" id="cgResult">—</div></div></div>
+<div class="callout warn"><b>不要直接拿計算器結果開 infusion / dialysis prescription。</b> Severe CKD、ongoing losses、rapid diuresis、DKA/HHS 與 severe dysnatremia 都可能讓公式預測偏離實際值。</div><div class="source-note"><b>本頁主要依據：</b><a target="_blank" rel="noopener" href="https://academic.oup.com/ejendo/article/170/3/G1/6668028">European Hyponatraemia Guideline</a> · <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10175862/">Hypernatremia adult review</a><br><span>最後核對：2026-09-23。Guideline 與 review 可能更新，臨床使用前仍應確認最新版本與院內規範。</span></div></section><script>function calcWaterDeficit(){const w=parseFloat(document.getElementById('fwWeight').value),c=parseFloat(document.getElementById('fwCoeff').value),na=parseFloat(document.getElementById('fwNa').value),t=parseFloat(document.getElementById('fwTarget').value),out=document.getElementById('fwResult');if(!w||!c||!na||!t||na<=0||t<=0){out.textContent='請輸入有效數值';return}const tbw=w*c,d=tbw*(na/t-1);out.innerHTML='TBW ≈ <b>'+tbw.toFixed(1)+' L</b>；估計 free-water deficit ≈ <b>'+d.toFixed(2)+' L</b>。這只是理論 deficit；實際補液需加入 ongoing/insensible losses、扣除其他 fluid input，並依 serial Na 與 volume status 調整。'}
+function calcOsm(){const na=parseFloat(document.getElementById('osNa').value),g=parseFloat(document.getElementById('osGlu').value),b=parseFloat(document.getElementById('osBun').value),out=document.getElementById('osResult');if([na,g,b].some(Number.isNaN)){out.textContent='請輸入有效數值';return}const osm=2*na+g/18+b/2.8,ton=2*na+g/18;out.innerHTML='Estimated osmolality ≈ <b>'+osm.toFixed(1)+' mOsm/kg</b>；effective osmolality / tonicity ≈ <b>'+ton.toFixed(1)+' mOsm/kg</b>。BUN 會增加 measured/estimated osmolality，但通常不是主要 effective osmole。'}
+function calcCorrectedNa(){const na=parseFloat(document.getElementById('cgNa').value),g=parseFloat(document.getElementById('cgGlu').value),out=document.getElementById('cgResult');if(Number.isNaN(na)||Number.isNaN(g)){out.textContent='請輸入有效數值';return}const delta=Math.max(0,g-100)/100;out.innerHTML='以 1.6 correction factor：≈ <b>'+(na+1.6*delta).toFixed(1)+'</b> mmol/L；以 2.4 factor：≈ <b>'+(na+2.4*delta).toFixed(1)+'</b> mmol/L。不同 glucose range / clinical context 可能採不同 factor，請把它當估算範圍而非絕對真值。'}</script><footer class="footer">臨床醫學教育與複習用途；實際診療請依病人情境、最新 guideline 與院內規範判斷。</footer></main></body></html>
