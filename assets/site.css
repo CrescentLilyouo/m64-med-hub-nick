@@ -49,3 +49,12 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .home-note{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;color:#475467}
 @media(max-width:900px){.topic-link{grid-column:span 6}.site-header .inner{align-items:flex-start;flex-direction:column}}
 @media(max-width:600px){.topic-link{grid-column:1/-1}.site-header{position:relative}.page-shell{padding-top:22px}}
+
+.toc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0 26px;box-shadow:var(--shadow)}
+.toc b{display:block;margin-bottom:7px}.toc a{display:inline-block;margin:4px 12px 4px 0;font-size:14px;font-weight:700}
+.source-note{background:#f8fafc;border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin:24px 0 8px;font-size:13px;color:#475467}
+.source-note a{font-weight:700}.source-note span{color:#667085}
+.clinical-box{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px;margin:14px 0}.clinical-box h4{margin-top:0}
+.checklist{margin:8px 0;padding-left:22px}.checklist li{margin:5px 0}
+.small{font-size:13px;color:#667085}
+.section[id]{scroll-margin-top:80px}
