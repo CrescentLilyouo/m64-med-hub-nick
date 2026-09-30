@@ -7,7 +7,7 @@
   const dialog = document.createElement('dialog');
   dialog.className = 'search-dialog';
   dialog.setAttribute('aria-labelledby', 'search-title');
-  dialog.innerHTML = `<div class="search-top"><h2 id="search-title">搜尋醫學資料</h2><button type="button" class="icon-button" aria-label="關閉搜尋">關閉</button></div><form role="search"><label for="site-query">疾病、症狀或英文縮寫</label><div class="search-fields"><input type="search" id="site-query" placeholder="例如：水腫、SBP、低血鈉" autocomplete="off"><select id="search-specialty" aria-label="搜尋科別"><option value="">全部科別</option><option value="腎臟內科">腎臟內科</option><option value="消化內科">消化內科</option></select></div></form><p class="search-status" role="status" aria-live="polite"></p><div class="search-results"></div>`;
+  dialog.innerHTML = `<div class="search-top"><h2 id="search-title">搜尋醫學資料</h2><button type="button" class="icon-button" aria-label="關閉搜尋">關閉</button></div><form role="search"><label for="site-query">疾病、症狀或英文縮寫</label><div class="search-fields"><input type="search" id="site-query" placeholder="例如：水腫、SBP、低血鈉" autocomplete="off"><select id="search-specialty" aria-label="搜尋科別"><option value="">全部科別</option><option value="心臟內科">心臟內科</option><option value="胸腔內科">胸腔內科</option><option value="腸胃肝膽">腸胃肝膽</option><option value="內分泌與新陳代謝">內分泌與新陳代謝</option><option value="腎臟內科">腎臟內科</option><option value="感染科">感染科</option><option value="免疫風濕科">免疫風濕科</option><option value="血液科">血液科</option><option value="腫瘤科">腫瘤科</option><option value="家庭醫學">家庭醫學</option></select></div></form><p class="search-status" role="status" aria-live="polite"></p><div class="search-results"></div>`;
   document.body.append(dialog);
   const query = dialog.querySelector('input');
   const specialty = dialog.querySelector('select');
@@ -17,7 +17,7 @@
   let indexPromise;
   let searchIndex = [];
   let loadFailed = false;
-  const aliases = { '洗腎': ['透析', 'dialysis', 'krt'], '水腫': ['edema', '腹水'], '低血鈉': ['hyponatremia'], '高血鈉': ['hypernatremia'], '肝炎': ['hepatitis'], '肝硬化': ['cirrhosis'], '肝性腦病': ['encephalopathy', 'he'], '腹水': ['ascites'], '肝癌': ['hcc'], '黑便': ['melena', 'gi bleeding'] };
+  const aliases = { '洗腎': ['透析', 'dialysis', 'krt'], '水腫': ['edema', '腹水'], '低血鈉': ['hyponatremia'], '高血鈉': ['hypernatremia'], '肝炎': ['hepatitis'], '肝硬化': ['cirrhosis'], '肝性腦病': ['encephalopathy', 'he'], '腹水': ['ascites'], '肝癌': ['hcc'], '黑便': ['melena', 'gi bleeding'], '糖尿病': ['diabetes', 'dm'], '氣喘': ['asthma'], '心衰竭': ['heart failure', 'hf'], '敗血症': ['sepsis'], '貧血': ['anemia'], '痛風': ['gout'], '血栓': ['thrombosis'], '甲狀腺': ['thyroid'] };
   function appendText(parent, tag, value, className) {
     const el = document.createElement(tag);
     el.textContent = value;
