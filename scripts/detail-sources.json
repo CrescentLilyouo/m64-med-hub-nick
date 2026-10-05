@@ -1,0 +1,16 @@
+{
+ "cardiology/ischemic-heart-disease": [["ACC/AHA ACS 2025：再灌流與抗栓", "https://www.acc.org/guidelines/guidelines/2025/02/27/17/21/acute-coronary-syndromes-2025"]],
+ "cardiology/ecg-arrhythmia": [["ACC/AHA/ACCP/HRS AF 2023：抗凝與復律", "https://www.acc.org/Guidelines/Guidelines/2023/11/30/12/05/Atrial-Fibrillation-2023-Guideline"]],
+ "cardiology/heart-failure-structure": [["AHA/ACC/HFSA 心衰竭 2022", "https://professional.heart.org/en/science-news/2022-guideline-for-the-management-of-heart-failure"]],
+ "pulmonology/physiology-airways": [["GINA 2026：氣喘策略", "https://ginasthma.org/2026-gina-strategy-report/"], ["GOLD 2026：COPD 報告與 Pocket Guide", "https://goldcopd.org/2026-gold-report-and-pocket-guide/"], ["GOLD：spirometry 診斷標準", "https://goldcopd.org/spirometry-quick-guide/"]],
+ "pulmonology/infection-interstitial": [["ATS 2025 CAP 更新：與 2019 基礎指引搭配閱讀", "https://site.thoracic.org/press-releases/treatment-with-antibiotics-and-steroids-in-adults-with-pneumonia-addressed-in-latest-clinical-practice-guideline"]],
+ "endocrinology/diabetes": [["ADA 2026：診斷與分類", "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes"], ["ADA/EASD 等 2024 成人 DKA／HHS 共識", "https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A"]],
+ "nephrology/renal-syndromes": [["KDIGO CKD 2024：正式指引與更新狀態", "https://kdigo.org/guidelines/ckd-evaluation-and-management/"], ["KDIGO AKI／AKD：正式版本與公審草案狀態", "https://kdigo.org/guidelines/acute-kidney-injury/"], ["KDIGO 2026 CKD 貧血", "https://kdigo.org/guidelines/anemia-in-ckd/"]],
+ "gastroenterology/exam-luminal": [["ACG 2024 H. pylori 指引摘要", "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/"]],
+ "gastroenterology/exam-hepatobiliary": [["ADQI/ICA 2024：肝硬化 AKI／HRS 共識", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/"]],
+ "infectious-disease/syndrome-sepsis": [["SSC 2021：本頁敗血症初期處置版本", "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021"]],
+ "rheumatology/connective-tissue": [["ACR 2025：SLE 治療更新", "https://rheumatology.org/press-releases/new-lupus-sle-clinical-practice-guidelines-released"], ["ACR：治療指引與分類標準入口", "https://rheumatology.org/clinical-guidance"]],
+ "hematology/anemia": [["KDIGO 2026：CKD 貧血", "https://kdigo.org/guidelines/anemia-in-ckd/"]],
+ "hematology/malignancy-transfusion": [["AABB 2023：RBC 輸血指引", "https://doi.org/10.1001/jama.2023.12914"], ["AABB/ICTMG 2025：血小板輸血指引", "https://www.aabb.org/news-resources/news/article/2025/05/29/aabb-develops-new-platelet-transfusion-guidelines"]],
+ "family-medicine/prevention-statistics": [["國健署：2025 乳癌篩檢年齡", "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=18916"], ["國健署：大腸癌篩檢資格", "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=5053&pid=20020"], ["國健署：癌症篩檢完整方案", "https://www.hpa.gov.tw/211/s"]]
+}

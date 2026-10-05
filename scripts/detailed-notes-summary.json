@@ -1,0 +1,263 @@
+{
+  "topics": 28,
+  "newCharacters": 58241,
+  "newSections": 139,
+  "newSubsections": 23,
+  "newTables": 47,
+  "newCases": 28,
+  "searchPages": 85,
+  "pages": [
+    {
+      "key": "cardiology/hypertension-lipids",
+      "title": "高血壓、大動脈與血脂",
+      "characters": 1933,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "cardiology/ischemic-heart-disease",
+      "title": "胸痛、穩定型心絞痛與 ACS",
+      "characters": 1956,
+      "sections": 6,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "cardiology/ecg-arrhythmia",
+      "title": "心電圖、心律不整與急救概念",
+      "characters": 1809,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "cardiology/heart-failure-structure",
+      "title": "心衰竭、瓣膜、心肌症與心包",
+      "characters": 1978,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "endocrinology/pituitary-thyroid-adrenal",
+      "title": "腦垂體、甲狀腺與腎上腺",
+      "characters": 2398,
+      "sections": 5,
+      "subsections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "endocrinology/diabetes",
+      "title": "糖尿病、藥物與急慢性併發症",
+      "characters": 2127,
+      "sections": 4,
+      "subsections": 1,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "endocrinology/calcium-metabolism",
+      "title": "鈣、骨質、血脂代謝與性腺",
+      "characters": 1596,
+      "sections": 4,
+      "subsections": 1,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "family-medicine/prevention-statistics",
+      "title": "預防醫學、臺灣篩檢與研究判讀",
+      "characters": 2433,
+      "sections": 6,
+      "subsections": 1,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "family-medicine/communication-geriatric-palliative",
+      "title": "醫病溝通、社區、老年與緩和醫療",
+      "characters": 2239,
+      "sections": 7,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "gastroenterology/exam-luminal",
+      "title": "國考整合：吞嚥、腹痛、腹瀉、出血與腸道",
+      "characters": 3117,
+      "sections": 6,
+      "subsections": 1,
+      "tables": 3,
+      "cases": 1
+    },
+    {
+      "key": "gastroenterology/exam-hepatobiliary",
+      "title": "國考整合：黃疸、肝炎、腹水與膽胰",
+      "characters": 2692,
+      "sections": 5,
+      "subsections": 3,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "hematology/anemia",
+      "title": "貧血、網狀紅血球與血液抹片",
+      "characters": 2017,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "hematology/coagulation-thrombosis",
+      "title": "凝血、血小板與血栓",
+      "characters": 1965,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 3,
+      "cases": 1
+    },
+    {
+      "key": "hematology/malignancy-transfusion",
+      "title": "白血病、MPN、淋巴瘤、骨髓瘤與輸血",
+      "characters": 2193,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "infectious-disease/syndrome-sepsis",
+      "title": "感染症候羣、採檢與敗血癥",
+      "characters": 1702,
+      "sections": 4,
+      "subsections": 4,
+      "tables": 0,
+      "cases": 1
+    },
+    {
+      "key": "infectious-disease/bacteria-antibiotics",
+      "title": "細菌分類與抗生素機轉",
+      "characters": 2266,
+      "sections": 5,
+      "subsections": 3,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "infectious-disease/virus-hiv-parasites",
+      "title": "病毒、HIV、黴菌與寄生蟲",
+      "characters": 2145,
+      "sections": 4,
+      "subsections": 1,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "nephrology/acid-base",
+      "title": "酸鹼平衡與 RTA",
+      "characters": 2060,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "nephrology/potassium-minerals",
+      "title": "鉀、鎂、鈣、磷與利尿劑",
+      "characters": 1697,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "nephrology/renal-syndromes",
+      "title": "AKI 鑑別、腎絲球、CKD、透析與移植",
+      "characters": 2230,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "oncology/principles-drugs",
+      "title": "腫瘤標記、治療藥物與乳癌／大腸癌",
+      "characters": 2079,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "oncology/emergencies",
+      "title": "腫瘤急症與副腫瘤症候羣",
+      "characters": 1854,
+      "sections": 6,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "pulmonology/physiology-airways",
+      "title": "肺功能、低血氧、氣喘與 COPD",
+      "characters": 2036,
+      "sections": 4,
+      "subsections": 3,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "pulmonology/infection-interstitial",
+      "title": "肺炎、支氣管擴張、結核與間質性肺病",
+      "characters": 1812,
+      "sections": 3,
+      "subsections": 2,
+      "tables": 2,
+      "cases": 1
+    },
+    {
+      "key": "pulmonology/critical-pleura-cancer",
+      "title": "呼吸器、ARDS、肺栓塞、肋膜與肺癌",
+      "characters": 1885,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "rheumatology/connective-tissue",
+      "title": "SLE、RA 與結締組織疾病",
+      "characters": 2195,
+      "sections": 5,
+      "subsections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "rheumatology/arthritis-vasculitis",
+      "title": "血管炎、脊椎關節炎與結晶關節炎",
+      "characters": 2007,
+      "sections": 5,
+      "subsections": 0,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "key": "rheumatology/allergy-immunology",
+      "title": "過敏、Anaphylaxis 與免疫學",
+      "characters": 1820,
+      "sections": 5,
+      "subsections": 1,
+      "tables": 2,
+      "cases": 1
+    }
+  ]
+}
