@@ -78,3 +78,12 @@ html{scroll-padding-top:0}.step{min-width:0;overflow-wrap:anywhere}h3[id]{scroll
 .learning-figure{margin:20px auto;max-width:480px}.learning-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:14px}.learning-figure figcaption{font-size:.875rem;color:#536277;line-height:1.8;margin-top:10px}.learning-figure figcaption span{display:block;color:#6c7b8f}.book-topics{margin:28px 0 36px}.book-topics>p{color:#536277}@media print{.learning-figure{max-width:320px;break-inside:avoid}}
 /* Detailed exam chapters */
 .chapter-number{display:block;font-size:.875rem;font-weight:700;color:#496594;letter-spacing:.06em;margin-bottom:5px}.detailed-section p{margin:14px 0;line-height:1.95}.study-list{padding-left:1.5em}.study-list li{margin:12px 0}.toc-label{font-size:.875rem;font-weight:750;color:#254570;padding:12px 10px 5px;border-top:1px solid var(--line);margin-top:5px}.reading-nav .toc-subsection{padding-left:23px;font-size:.875rem;color:#596e88}.quick-review{padding:16px 20px;border:1px solid #adc2e4;background:#eef4fc;border-radius:10px}.quick-review h2{border:0;margin:0 0 8px;padding:0}.quick-review p{margin:0}.detailed-quiz{margin:22px 0}.detailed-section h3[id]{scroll-margin-top:105px}.detailed-notes .table-wrap{margin-top:16px}.detailed-quiz summary{font-weight:700;line-height:1.85}.detailed-quiz .answer p{margin-bottom:0}@media(max-width:700px){.detailed-section p{line-height:1.9}.quick-review{padding:15px}.reading-nav nav>div{grid-column:1/-1}.reading-nav .toc-subsection{padding-left:25px}}@media print{.detailed-quiz .answer{display:block}.quick-review{background:white}.chapter-number{color:#222}}
+
+/* Independent chapter pages */
+.leaf-directory .topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.leaf-directory .leaf-topic{grid-column:auto;min-width:0}.leaf-topic h3{line-height:1.65;overflow-wrap:anywhere}
+.chapter-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0}
+.chapter-pager a{display:flex;flex-direction:column;gap:.35rem;border:1px solid var(--line,#dce2e7);border-radius:12px;padding:1rem;text-decoration:none;overflow-wrap:anywhere}
+.chapter-pager small{color:var(--muted,#52616b)}
+@media(max-width:640px){.leaf-directory .topic-grid,.chapter-pager{grid-template-columns:1fr}}
+@media print{.chapter-pager,.leaf-directory{display:none}}

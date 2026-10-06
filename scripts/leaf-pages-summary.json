@@ -1,0 +1,1077 @@
+{
+  "sectionPages": 139,
+  "diseasePages": 39,
+  "leafPages": 178,
+  "newCharacters": 55526,
+  "searchPages": 263,
+  "pages": [
+    {
+      "slug": "cardiology/hypertension-lipids-section-01",
+      "title": "血壓的生理、正確量測與分級",
+      "parent": "cardiology/hypertension-lipids",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/hypertension-lipids-section-02",
+      "title": "次發性高血壓：從題幹到檢查",
+      "parent": "cardiology/hypertension-lipids",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/hypertension-lipids-section-03",
+      "title": "長期降壓：共病如何改變選藥",
+      "parent": "cardiology/hypertension-lipids",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/hypertension-lipids-section-04",
+      "title": "高血壓急症與主動脈剝離",
+      "parent": "cardiology/hypertension-lipids",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/hypertension-lipids-section-05",
+      "title": "血脂：風險、藥物與家族性疾病",
+      "parent": "cardiology/hypertension-lipids",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-01",
+      "title": "冠狀動脈缺血的機轉與症狀",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-02",
+      "title": "ECG 與 troponin 的正確判讀",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-03",
+      "title": "穩定型胸痛：檢查如何選",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-04",
+      "title": "STEMI 再灌流：要會時間與禁忌",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-05",
+      "title": "抗栓、支援治療與出院後管理",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ischemic-heart-disease-section-06",
+      "title": "心肌梗塞併發症：時間、雜音與超音波",
+      "parent": "cardiology/ischemic-heart-disease",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ecg-arrhythmia-section-01",
+      "title": "ECG 基本數字與定位",
+      "parent": "cardiology/ecg-arrhythmia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ecg-arrhythmia-section-02",
+      "title": "AV block 分類與處置",
+      "parent": "cardiology/ecg-arrhythmia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ecg-arrhythmia-section-03",
+      "title": "快速心律：先穩定度，再 QRS",
+      "parent": "cardiology/ecg-arrhythmia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ecg-arrhythmia-section-04",
+      "title": "AF、flutter 與抗凝",
+      "parent": "cardiology/ecg-arrhythmia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/ecg-arrhythmia-section-05",
+      "title": "WPW、長 QT 與電解質",
+      "parent": "cardiology/ecg-arrhythmia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/heart-failure-structure-section-01",
+      "title": "心衰竭的機轉、分類與診斷",
+      "parent": "cardiology/heart-failure-structure",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/heart-failure-structure-section-02",
+      "title": "HFrEF 藥物：減輕症狀與改善預後",
+      "parent": "cardiology/heart-failure-structure",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/heart-failure-structure-section-03",
+      "title": "急性肺水腫：先看灌流與鬱血",
+      "parent": "cardiology/heart-failure-structure",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/heart-failure-structure-section-04",
+      "title": "四大瓣膜病：雜音如何連到血流",
+      "parent": "cardiology/heart-failure-structure",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/heart-failure-structure-section-05",
+      "title": "心肌症與心包疾病",
+      "parent": "cardiology/heart-failure-structure",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/pituitary-thyroid-adrenal-section-01",
+      "title": "內分泌判讀：先找軸線與回饋",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/pituitary-thyroid-adrenal-section-02",
+      "title": "腦下垂體：泌乳素、肢端肥大與缺乏",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/pituitary-thyroid-adrenal-section-03",
+      "title": "多尿：尿崩症與原發性喝水過多",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/pituitary-thyroid-adrenal-section-04",
+      "title": "甲狀腺：TSH 和 free T4 配對",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/pituitary-thyroid-adrenal-section-05",
+      "title": "腎上腺：不足、過多與醛固酮",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/diabetes-section-01",
+      "title": "診斷與分類：數字要連到生理",
+      "parent": "endocrinology/diabetes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/diabetes-section-02",
+      "title": "藥物：從機轉選到共病",
+      "parent": "endocrinology/diabetes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/diabetes-section-03",
+      "title": "DKA 和 HHS：2024 成人共識與舊題比較",
+      "parent": "endocrinology/diabetes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/diabetes-section-04",
+      "title": "低血糖與慢性併發症",
+      "parent": "endocrinology/diabetes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/calcium-metabolism-section-01",
+      "title": "鈣、磷與 PTH 的回饋",
+      "parent": "endocrinology/calcium-metabolism",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/calcium-metabolism-section-02",
+      "title": "高血鈣：第一個分岔是 PTH",
+      "parent": "endocrinology/calcium-metabolism",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/calcium-metabolism-section-03",
+      "title": "低血鈣、骨軟化與骨質疏鬆",
+      "parent": "endocrinology/calcium-metabolism",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "endocrinology/calcium-metabolism-section-04",
+      "title": "肥胖、代謝症候群與尿酸",
+      "parent": "endocrinology/calcium-metabolism",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-01",
+      "title": "預防與篩檢：對象、目的、後續",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-02",
+      "title": "臺灣癌症篩檢與舊書區分",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-03",
+      "title": "診斷試驗：2×2 表與 Bayes",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-04",
+      "title": "治療效果：絕對與相對要一起算",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-05",
+      "title": "研究設計、bias 與統計",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/prevention-statistics-section-06",
+      "title": "成人預防：疫苗、菸酒與風險溝通",
+      "parent": "family-medicine/prevention-statistics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-01",
+      "title": "病人中心與臨床推理",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-02",
+      "title": "溝通：問、聽、確認理解",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-03",
+      "title": "高齡評估：功能先於年齡數字",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-04",
+      "title": "Delirium、dementia、depression",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-05",
+      "title": "跌倒與 medication review",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-06",
+      "title": "安寧、緩和與預立決策",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "family-medicine/communication-geriatric-palliative-section-07",
+      "title": "症狀控制與轉銜",
+      "parent": "family-medicine/communication-geriatric-palliative",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-01",
+      "title": "吞嚥困難：先分開始吞不下或吞下後卡住",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-02",
+      "title": "GERD、Barrett 與消化性潰瘍",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-03",
+      "title": "GI 出血：穩定、定位、內視鏡",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-04",
+      "title": "腹瀉、吸收不良與 IBS",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-05",
+      "title": "IBD：UC、Crohn 與治療層次",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-luminal-section-06",
+      "title": "腹痛與腫瘤：位置不能取代危險程度",
+      "parent": "gastroenterology/exam-luminal",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-hepatobiliary-section-01",
+      "title": "肝生化不是所有都叫肝功能",
+      "parent": "gastroenterology/exam-hepatobiliary",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-hepatobiliary-section-02",
+      "title": "黃疸與病毒血清學",
+      "parent": "gastroenterology/exam-hepatobiliary",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-hepatobiliary-section-03",
+      "title": "肝硬化：從門脈高壓到器官失代償",
+      "parent": "gastroenterology/exam-hepatobiliary",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-hepatobiliary-section-04",
+      "title": "膽道與胰臟：阻塞、感染、炎症",
+      "parent": "gastroenterology/exam-hepatobiliary",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "gastroenterology/exam-hepatobiliary-section-05",
+      "title": "HCC 與 transplant criteria",
+      "parent": "gastroenterology/exam-hepatobiliary",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/anemia-section-01",
+      "title": "貧血先分生成不足或流失／破壞",
+      "parent": "hematology/anemia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/anemia-section-02",
+      "title": "小球性貧血：鐵、炎症與 thalassemia",
+      "parent": "hematology/anemia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/anemia-section-03",
+      "title": "大球性貧血：B12、folate 與非巨幼紅",
+      "parent": "hematology/anemia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/anemia-section-04",
+      "title": "溶血：先證據，再免疫或非免疫",
+      "parent": "hematology/anemia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/anemia-section-05",
+      "title": "正球、骨髓與跨科病因",
+      "parent": "hematology/anemia",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/coagulation-thrombosis-section-01",
+      "title": "出血型態與凝血路徑",
+      "parent": "hematology/coagulation-thrombosis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/coagulation-thrombosis-section-02",
+      "title": "PT／aPTT 延長：mixing test",
+      "parent": "hematology/coagulation-thrombosis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/coagulation-thrombosis-section-03",
+      "title": "血小板低：ITP、TTP、DIC、HIT",
+      "parent": "hematology/coagulation-thrombosis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/coagulation-thrombosis-section-04",
+      "title": "vWD、hemophilia 與抗磷脂",
+      "parent": "hematology/coagulation-thrombosis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/coagulation-thrombosis-section-05",
+      "title": "VTE 與抗凝：病因、藥物、時間",
+      "parent": "hematology/coagulation-thrombosis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/malignancy-transfusion-section-01",
+      "title": "白血病：急慢性、細胞譜與骨髓",
+      "parent": "hematology/malignancy-transfusion",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/malignancy-transfusion-section-02",
+      "title": "Lymphoma：組織、分期與系統症狀",
+      "parent": "hematology/malignancy-transfusion",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/malignancy-transfusion-section-03",
+      "title": "Plasma-cell disease：CRAB 和 SLiM",
+      "parent": "hematology/malignancy-transfusion",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/malignancy-transfusion-section-04",
+      "title": "輸血：選對成分與適應",
+      "parent": "hematology/malignancy-transfusion",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "hematology/malignancy-transfusion-section-05",
+      "title": "輸血反應：立即停輸再鑑別",
+      "parent": "hematology/malignancy-transfusion",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/syndrome-sepsis-section-01",
+      "title": "發燒：先看宿主、部位與危險程度",
+      "parent": "infectious-disease/syndrome-sepsis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/syndrome-sepsis-section-02",
+      "title": "Sepsis 定義：不要混用 SIRS、qSOFA、SOFA",
+      "parent": "infectious-disease/syndrome-sepsis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/syndrome-sepsis-section-03",
+      "title": "感染源控制：抗生素不能取代引流",
+      "parent": "infectious-disease/syndrome-sepsis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/syndrome-sepsis-section-04",
+      "title": "CNS、心內膜與尿路感染",
+      "parent": "infectious-disease/syndrome-sepsis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/bacteria-antibiotics-section-01",
+      "title": "病原記憶：先部位，再暴露與宿主",
+      "parent": "infectious-disease/bacteria-antibiotics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/bacteria-antibiotics-section-02",
+      "title": "β-lactam：機轉與抗藥型態",
+      "parent": "infectious-disease/bacteria-antibiotics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/bacteria-antibiotics-section-03",
+      "title": "非 β-lactam：高頻毒性比較",
+      "parent": "infectious-disease/bacteria-antibiotics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/bacteria-antibiotics-section-04",
+      "title": "三種常考細菌病",
+      "parent": "infectious-disease/bacteria-antibiotics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/bacteria-antibiotics-section-05",
+      "title": "抗菌決策的完整順序",
+      "parent": "infectious-disease/bacteria-antibiotics",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/virus-hiv-parasites-section-01",
+      "title": "病毒診斷：抗體、抗原、核酸不同",
+      "parent": "infectious-disease/virus-hiv-parasites",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/virus-hiv-parasites-section-02",
+      "title": "HIV：感染時程與治療",
+      "parent": "infectious-disease/virus-hiv-parasites",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/virus-hiv-parasites-section-03",
+      "title": "黴菌：型態、宿主與診斷",
+      "parent": "infectious-disease/virus-hiv-parasites",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "infectious-disease/virus-hiv-parasites-section-04",
+      "title": "寄生蟲：地理、生命週期與併發症",
+      "parent": "infectious-disease/virus-hiv-parasites",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/acid-base-section-01",
+      "title": "血氣先讀原發異常，再驗證代償",
+      "parent": "nephrology/acid-base",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/acid-base-section-02",
+      "title": "代償公式：每條都有用途",
+      "parent": "nephrology/acid-base",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/acid-base-section-03",
+      "title": "Anion gap 與混合代謝異常",
+      "parent": "nephrology/acid-base",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/acid-base-section-04",
+      "title": "正常 AG 酸中毒：腹瀉與 RTA",
+      "parent": "nephrology/acid-base",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/acid-base-section-05",
+      "title": "代謝性鹼中毒與毒物考點",
+      "parent": "nephrology/acid-base",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/potassium-minerals-section-01",
+      "title": "鉀異常先區分總量與移動",
+      "parent": "nephrology/potassium-minerals",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/potassium-minerals-section-02",
+      "title": "高鉀急救：三種作用不能混淆",
+      "parent": "nephrology/potassium-minerals",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/potassium-minerals-section-03",
+      "title": "低鉀：腎丟失、腸丟失與血壓",
+      "parent": "nephrology/potassium-minerals",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/potassium-minerals-section-04",
+      "title": "磷與鎂：跨科情境要連起來",
+      "parent": "nephrology/potassium-minerals",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/potassium-minerals-section-05",
+      "title": "尿石：成分、尿 pH 與病因",
+      "parent": "nephrology/potassium-minerals",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/renal-syndromes-section-01",
+      "title": "腎臟症候群與尿液沉渣",
+      "parent": "nephrology/renal-syndromes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/renal-syndromes-section-02",
+      "title": "常見腎絲球病：病程比名稱更重要",
+      "parent": "nephrology/renal-syndromes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/renal-syndromes-section-03",
+      "title": "AKI：先找可逆因素，再尿指標",
+      "parent": "nephrology/renal-syndromes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/renal-syndromes-section-04",
+      "title": "CKD：CGA 分期與併發症",
+      "parent": "nephrology/renal-syndromes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "nephrology/renal-syndromes-section-05",
+      "title": "透析適應症與腎病水腫",
+      "parent": "nephrology/renal-syndromes",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/principles-drugs-section-01",
+      "title": "癌症診斷：病理、分期、分子、體能",
+      "parent": "oncology/principles-drugs",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/principles-drugs-section-02",
+      "title": "治療目的與時間順序",
+      "parent": "oncology/principles-drugs",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/principles-drugs-section-03",
+      "title": "細胞毒藥：機轉連到不可逆毒性",
+      "parent": "oncology/principles-drugs",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/principles-drugs-section-04",
+      "title": "標靶與免疫治療：不能與化療副作用表共用",
+      "parent": "oncology/principles-drugs",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/principles-drugs-section-05",
+      "title": "反應、抗藥與存活指標",
+      "parent": "oncology/principles-drugs",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-01",
+      "title": "腫瘤急症：先辨識威脅器官",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-02",
+      "title": "Febrile neutropenia",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-03",
+      "title": "Tumor lysis syndrome",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-04",
+      "title": "脊髓壓迫、SVC 與顱內壓",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-05",
+      "title": "惡性高鈣、SIADH 與心包填塞",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "oncology/emergencies-section-06",
+      "title": "治療相關急症",
+      "parent": "oncology/emergencies",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/physiology-airways-section-01",
+      "title": "呼吸生理：低血氧先找機轉",
+      "parent": "pulmonology/physiology-airways",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/physiology-airways-section-02",
+      "title": "肺功能：阻塞、限制與 DLCO",
+      "parent": "pulmonology/physiology-airways",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/physiology-airways-section-03",
+      "title": "氣喘：診斷、控制與嚴重度",
+      "parent": "pulmonology/physiology-airways",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/physiology-airways-section-04",
+      "title": "COPD：診斷、症狀與治療分開看",
+      "parent": "pulmonology/physiology-airways",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/infection-interstitial-section-01",
+      "title": "肺炎：症候群、影像與病原風險",
+      "parent": "pulmonology/infection-interstitial",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/infection-interstitial-section-02",
+      "title": "結核：潛伏、活動與藥物毒性",
+      "parent": "pulmonology/infection-interstitial",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/infection-interstitial-section-03",
+      "title": "ILD：先分原因，再看影像型態",
+      "parent": "pulmonology/infection-interstitial",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/critical-pleura-cancer-section-01",
+      "title": "呼吸衰竭與通氣支援",
+      "parent": "pulmonology/critical-pleura-cancer",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/critical-pleura-cancer-section-02",
+      "title": "ARDS：定義、分級與肺保護",
+      "parent": "pulmonology/critical-pleura-cancer",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/critical-pleura-cancer-section-03",
+      "title": "肺栓塞：檢驗的順序會影響答案",
+      "parent": "pulmonology/critical-pleura-cancer",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/critical-pleura-cancer-section-04",
+      "title": "胸水：Light criteria 與穿刺後判讀",
+      "parent": "pulmonology/critical-pleura-cancer",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "pulmonology/critical-pleura-cancer-section-05",
+      "title": "氣胸與肺癌：先辨識危急，再分類",
+      "parent": "pulmonology/critical-pleura-cancer",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/connective-tissue-section-01",
+      "title": "自體免疫病：症候群先於抗體",
+      "parent": "rheumatology/connective-tissue",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/connective-tissue-section-02",
+      "title": "SLE：器官、活動度與傷害",
+      "parent": "rheumatology/connective-tissue",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/connective-tissue-section-03",
+      "title": "APS 與孕期",
+      "parent": "rheumatology/connective-tissue",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/connective-tissue-section-04",
+      "title": "RA：發炎性關節到 DMARD",
+      "parent": "rheumatology/connective-tissue",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/connective-tissue-section-05",
+      "title": "Sjögren、硬皮症與肌炎",
+      "parent": "rheumatology/connective-tissue",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/arthritis-vasculitis-section-01",
+      "title": "關節痛：先辨發炎、退化或感染",
+      "parent": "rheumatology/arthritis-vasculitis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/arthritis-vasculitis-section-02",
+      "title": "痛風與 CPPD：晶體、尿酸、治療",
+      "parent": "rheumatology/arthritis-vasculitis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/arthritis-vasculitis-section-03",
+      "title": "脊椎關節炎：軸向與周邊分開",
+      "parent": "rheumatology/arthritis-vasculitis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/arthritis-vasculitis-section-04",
+      "title": "血管炎：大小、ANCA 與器官表現",
+      "parent": "rheumatology/arthritis-vasculitis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/arthritis-vasculitis-section-05",
+      "title": "重症器官病：不是都一樣免疫抑制",
+      "parent": "rheumatology/arthritis-vasculitis",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/allergy-immunology-section-01",
+      "title": "免疫反應分類：機轉比例子重要",
+      "parent": "rheumatology/allergy-immunology",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/allergy-immunology-section-02",
+      "title": "Anaphylaxis：沒有皮疹也可能",
+      "parent": "rheumatology/allergy-immunology",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/allergy-immunology-section-03",
+      "title": "蕁麻疹與血管性水腫",
+      "parent": "rheumatology/allergy-immunology",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/allergy-immunology-section-04",
+      "title": "免疫缺乏：用感染型態定位",
+      "parent": "rheumatology/allergy-immunology",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "rheumatology/allergy-immunology-section-05",
+      "title": "藥物超敏、疫苗與免疫抑制",
+      "parent": "rheumatology/allergy-immunology",
+      "kind": "逐項詳讀"
+    },
+    {
+      "slug": "cardiology/aortic-stenosis",
+      "title": "主動脈瓣狹窄 AS",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/aortic-regurgitation",
+      "title": "主動脈瓣逆流 AR",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/mitral-stenosis",
+      "title": "二尖瓣狹窄 MS",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/mitral-regurgitation",
+      "title": "二尖瓣逆流 MR",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/hypertrophic-cardiomyopathy",
+      "title": "肥厚型心肌症 HCM",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/dilated-cardiomyopathy",
+      "title": "擴張型心肌症 DCM",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/restrictive-cardiomyopathy",
+      "title": "限制型心肌症 RCM",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/acute-pericarditis",
+      "title": "急性心包炎",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/cardiac-tamponade",
+      "title": "心包填塞",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "cardiology/atrial-fibrillation",
+      "title": "心房顫動 AF",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/ecg-arrhythmia"
+    },
+    {
+      "slug": "cardiology/supraventricular-tachycardia",
+      "title": "規則窄 QRS 上心室頻脈 SVT",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/ecg-arrhythmia"
+    },
+    {
+      "slug": "cardiology/ventricular-tachycardia",
+      "title": "心室頻脈 VT 與 VF",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/ecg-arrhythmia"
+    },
+    {
+      "slug": "cardiology/wolff-parkinson-white",
+      "title": "預激與 WPW",
+      "kind": "疾病詳讀",
+      "parent": "cardiology/ecg-arrhythmia"
+    },
+    {
+      "slug": "endocrinology/diabetic-ketoacidosis",
+      "title": "糖尿病酮酸中毒 DKA",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/diabetes"
+    },
+    {
+      "slug": "endocrinology/hyperosmolar-hyperglycemic-state",
+      "title": "高滲透壓高血糖狀態 HHS",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/diabetes"
+    },
+    {
+      "slug": "endocrinology/graves-disease",
+      "title": "Graves disease 與甲狀腺亢進",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/hypothyroidism",
+      "title": "甲狀腺低下與 Hashimoto",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/thyroiditis",
+      "title": "甲狀腺炎與低攝取 thyrotoxicosis",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/thyroid-storm",
+      "title": "甲狀腺風暴 Thyroid storm",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/adrenal-insufficiency",
+      "title": "腎上腺不足與 adrenal crisis",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/cushing-syndrome",
+      "title": "Cushing syndrome 的診斷分支",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "endocrinology/primary-aldosteronism",
+      "title": "原發性醛固酮過多 PA",
+      "kind": "疾病詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "gastroenterology/cirrhotic-ascites",
+      "title": "肝硬化腹水與門脈高壓",
+      "kind": "疾病詳讀",
+      "parent": "gastroenterology/exam-hepatobiliary"
+    },
+    {
+      "slug": "gastroenterology/spontaneous-bacterial-peritonitis",
+      "title": "自發性細菌性腹膜炎 SBP",
+      "kind": "疾病詳讀",
+      "parent": "gastroenterology/exam-hepatobiliary"
+    },
+    {
+      "slug": "gastroenterology/hepatic-encephalopathy",
+      "title": "肝性腦病 HE",
+      "kind": "疾病詳讀",
+      "parent": "gastroenterology/exam-hepatobiliary"
+    },
+    {
+      "slug": "gastroenterology/hepatorenal-syndrome",
+      "title": "肝腎症候群 HRS-AKI",
+      "kind": "疾病詳讀",
+      "parent": "gastroenterology/exam-hepatobiliary"
+    },
+    {
+      "slug": "hematology/itp",
+      "title": "免疫性血小板低下 ITP",
+      "kind": "疾病詳讀",
+      "parent": "hematology/coagulation-thrombosis"
+    },
+    {
+      "slug": "hematology/ttp",
+      "title": "血栓性血小板低下紫斑症 TTP",
+      "kind": "疾病詳讀",
+      "parent": "hematology/coagulation-thrombosis"
+    },
+    {
+      "slug": "hematology/dic",
+      "title": "瀰漫性血管內凝血 DIC",
+      "kind": "疾病詳讀",
+      "parent": "hematology/coagulation-thrombosis"
+    },
+    {
+      "slug": "hematology/hit",
+      "title": "Heparin-induced thrombocytopenia HIT",
+      "kind": "疾病詳讀",
+      "parent": "hematology/coagulation-thrombosis"
+    },
+    {
+      "slug": "nephrology/iga-nephropathy",
+      "title": "IgA nephropathy",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "nephrology/postinfectious-gn",
+      "title": "感染相關腎絲球腎炎",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "nephrology/minimal-change-disease",
+      "title": "微小病變 MCD",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "nephrology/fsgs",
+      "title": "局灶節段性腎絲球硬化 FSGS",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "nephrology/membranous-nephropathy",
+      "title": "膜性腎病 Membranous nephropathy",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "nephrology/rpgn-pulmonary-renal",
+      "title": "RPGN 與肺腎症候群",
+      "kind": "疾病詳讀",
+      "parent": "nephrology/renal-syndromes"
+    },
+    {
+      "slug": "rheumatology/sjogren-syndrome",
+      "title": "Sjögren syndrome",
+      "kind": "疾病詳讀",
+      "parent": "rheumatology/connective-tissue"
+    },
+    {
+      "slug": "rheumatology/systemic-sclerosis",
+      "title": "系統性硬皮症",
+      "kind": "疾病詳讀",
+      "parent": "rheumatology/connective-tissue"
+    },
+    {
+      "slug": "rheumatology/inflammatory-myopathy",
+      "title": "發炎性肌病與 dermatomyositis",
+      "kind": "疾病詳讀",
+      "parent": "rheumatology/connective-tissue"
+    }
+  ]
+}
