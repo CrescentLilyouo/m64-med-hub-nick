@@ -1,0 +1,38 @@
+{
+  "reviewDate": "2026-10-06",
+  "chapters": [
+    {
+      "slug": "endocrinology/diabetic-ketoacidosis",
+      "title": "糖尿病酮酸中毒 DKA",
+      "parent": "endocrinology/diabetes",
+      "book": "第 2 冊糖尿病急性併發症（PDF 246 頁）、相關考點（PDF 263–264 頁）",
+      "sources": [
+        ["2024 成人高血糖危象共識：診斷、鉀門檻與解除標準", "https://doi.org/10.2337/dci24-0032"],
+        ["共識作者提供的全文 PDF", "https://profketandhatariya.com/wp-content/uploads/2024/08/Diabetes-Care-2024.pdf"],
+        ["JBDS 成人 DKA 指引（2023）：治療與監測架構", "https://abcd.care/resource/current/jbds-02-management-diabetic-ketoacidosis-adults"]
+      ]
+    },
+    {
+      "slug": "endocrinology/hyperosmolar-hyperglycemic-state",
+      "title": "高滲透壓高血糖狀態 HHS",
+      "parent": "endocrinology/diabetes",
+      "book": "第 2 冊糖尿病急性併發症（PDF 246 頁）、相關考點（PDF 263 頁）",
+      "sources": [
+        ["2024 成人高血糖危象共識：四組診斷條件及版本差異", "https://doi.org/10.2337/dci24-0032"],
+        ["JBDS 成人 HHS：體液與滲透壓變化、解除評估", "https://abcd.care/resource/current/jbds-06-management-hyperosmolar-hyperglycaemic-state-hhs-adults-diabetes"],
+        ["JBDS HHS 成人照護路徑（2022）", "https://abcd.care/sites/default/files/site_uploads/JBDS_Guidelines_Current/JBDS_06_HHS_care_pathway_in_adults_2022.pdf"]
+      ]
+    },
+    {
+      "slug": "endocrinology/adrenal-insufficiency",
+      "title": "腎上腺功能不足與 adrenal crisis",
+      "parent": "endocrinology/pituitary-thyroid-adrenal",
+      "book": "第 2 冊腎上腺功能不足與相關考點（PDF 229、231 頁）",
+      "sources": [
+        ["Endocrine Society 原發性腎上腺功能不足（2016）：診斷與替代、危象", "https://www.endocrine.org/clinical-practice-guidelines/primary-adrenal-insufficiency"],
+        ["ESE／Endocrine Society 類固醇誘發不足（2024）：減量及 HPA 恢復", "https://www.endocrine.org/clinical-practice-guidelines/glucocorticoid-induced-adrenal-insufficiency"],
+        ["Society for Endocrinology：腎上腺危象處理", "https://www.endocrinology.org/clinical-practice/clinical-guidance/adrenal-crisis/"]
+      ]
+    }
+  ]
+}

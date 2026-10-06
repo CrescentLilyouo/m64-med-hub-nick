@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-06",
+  "expandedChapters": 3,
+  "characters": 16618,
+  "sections": 33,
+  "tables": 17,
+  "cases": 17,
+  "searchPages": 264,
+  "chapters": [
+    {
+      "slug": "endocrinology/diabetic-ketoacidosis",
+      "characters": 6120,
+      "sections": 11,
+      "subsections": 15,
+      "tables": 7,
+      "cases": 6
+    },
+    {
+      "slug": "endocrinology/hyperosmolar-hyperglycemic-state",
+      "characters": 5201,
+      "sections": 11,
+      "subsections": 14,
+      "tables": 5,
+      "cases": 5
+    },
+    {
+      "slug": "endocrinology/adrenal-insufficiency",
+      "characters": 5297,
+      "sections": 11,
+      "subsections": 15,
+      "tables": 5,
+      "cases": 6
+    }
+  ]
+}

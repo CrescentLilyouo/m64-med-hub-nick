@@ -113,3 +113,7 @@ for path in sorted(ROOT.rglob('*.html')):
 (ROOT/'assets/search-index.json').write_text(json.dumps(search,ensure_ascii=False,separators=(',',':')))
 report=dict(sectionPages=len(extensions),diseasePages=len(diseases),leafPages=len(allpages),newCharacters=sum(len(s) for s in extensions.values())+sum(len(s) for s in diseases.values()),searchPages=len(search),pages=[{k:v for k,v in x.items() if k!='content'} for x in allpages])
 (ROOT/'scripts/leaf-pages-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='pages'},ensure_ascii=False))
+# Detailed chapters are authoritative overrides; preserve them on future rebuilds.
+import subprocess,sys
+if (ROOT/'scripts/build_textbook_pages.py').exists():
+ subprocess.run([sys.executable,str(ROOT/'scripts/build_textbook_pages.py')],check=True)
