@@ -1,9 +1,12 @@
 {
   "sectionPages": 139,
   "diseasePages": 39,
-  "leafPages": 178,
+  "supplementalPages": 8,
+  "leafPages": 186,
   "newCharacters": 55526,
-  "searchPages": 263,
+  "clinicalCompletionPages": 175,
+  "clinicalCompletionCharacters": 60023,
+  "searchPages": 272,
   "pages": [
     {
       "slug": "cardiology/hypertension-lipids-section-01",
@@ -1072,6 +1075,54 @@
       "title": "發炎性肌病與 dermatomyositis",
       "kind": "疾病詳讀",
       "parent": "rheumatology/connective-tissue"
+    },
+    {
+      "slug": "cardiology/adult-congenital",
+      "title": "成人先天性心臟病與分流",
+      "kind": "延伸詳讀",
+      "parent": "cardiology/heart-failure-structure"
+    },
+    {
+      "slug": "pulmonology/pulmonary-hypertension",
+      "title": "肺高壓：五群與右心導管",
+      "kind": "延伸詳讀",
+      "parent": "pulmonology/critical-pleura-cancer"
+    },
+    {
+      "slug": "pulmonology/sleep-bronchiectasis",
+      "title": "睡眠呼吸障礙與支氣管擴張",
+      "kind": "延伸詳讀",
+      "parent": "pulmonology/physiology-airways"
+    },
+    {
+      "slug": "endocrinology/pheochromocytoma",
+      "title": "嗜鉻細胞瘤與腎上腺偶發瘤",
+      "kind": "延伸詳讀",
+      "parent": "endocrinology/pituitary-thyroid-adrenal"
+    },
+    {
+      "slug": "family-medicine/occupational-health",
+      "title": "職業醫學：暴露、因果與預防",
+      "kind": "延伸詳讀",
+      "parent": "family-medicine/communication-geriatric-palliative"
+    },
+    {
+      "slug": "family-medicine/travel-medicine",
+      "title": "旅遊醫學：行前評估與返國發燒",
+      "kind": "延伸詳讀",
+      "parent": "family-medicine/prevention-statistics"
+    },
+    {
+      "slug": "family-medicine/adolescent-care",
+      "title": "青少年照護：保密、風險與成長",
+      "kind": "延伸詳讀",
+      "parent": "family-medicine/communication-geriatric-palliative"
+    },
+    {
+      "slug": "family-medicine/community-primary-care",
+      "title": "社區導向照護與初級醫療",
+      "kind": "延伸詳讀",
+      "parent": "family-medicine/prevention-statistics"
     }
   ]
 }

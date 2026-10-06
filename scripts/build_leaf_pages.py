@@ -22,6 +22,16 @@ def chunkmap(folder):
    key,body=ch.split('\n',1);assert key.strip() not in result,key;result[key.strip()]=clean(body)
  return result
 extensions=chunkmap(ROOT/'scripts/leaf-notes')
+completion=chunkmap(ROOT/'scripts/clinical-completion')
+disease_completion=chunkmap(ROOT/'scripts/disease-completion')
+assert set(completion)==set(extensions), 'completion keys do not match every existing section'
+def extra_fragments(body, prefix):
+ markup,_,_,_=render(body)
+ nodes=html.fragments_fromstring(markup)
+ for node in nodes:
+  for el in [node]+list(node.iterdescendants()):
+   if el.get('id'): el.set('id',prefix+el.get('id'))
+ return nodes
 diseases=chunkmap(ROOT/'scripts/disease-notes') if (ROOT/'scripts/disease-notes').exists() else {}
 allpages=[];parents={};source_titles={}
 for key,body in chunkmap(ROOT/'scripts/detailed-notes').items():
@@ -36,7 +46,7 @@ for key,body in chunkmap(ROOT/'scripts/detailed-notes').items():
    label=label.replace(''.join(badge.itertext()),'',1);h2.remove(badge)
   label=label.strip();assert label,extkey
   section.set('id','core');h2.text='核心整理｜'+label
-  slug=f'{key}-section-{n:02}';content=[section];extra,_,_,_=render(extensions[extkey]);content.extend(html.fragments_fromstring(extra))
+  slug=f'{key}-section-{n:02}';content=[section];extra,_,_,_=render(extensions[extkey]);content.extend(extra_fragments(extensions[extkey],'extension-'));content.extend(extra_fragments(completion[extkey],'clinical-'))
   parents[key][1].append({'slug':slug,'title':label,'kind':'逐項詳讀'})
   allpages.append({'slug':slug,'title':label,'parent':key,'content':content,'kind':'逐項詳讀'})
 assert len(extensions)==sum(len(v[1]) for v in parents.values()),'orphan extension'
@@ -46,7 +56,16 @@ for key,body in diseases.items():
  fullslug=parent.rsplit('/',1)[0]+'/'+slug
  content,_,_,_=render(body)
  item={'slug':fullslug,'title':title,'kind':'疾病詳讀'};parents[parent][1].append(item)
- allpages.append({**item,'parent':parent,'content':html.fragments_fromstring(content)})
+ nodes=html.fragments_fromstring(content)
+ if mapping in disease_completion: nodes.extend(extra_fragments(disease_completion[mapping],'clinical-'))
+ allpages.append({**item,'parent':parent,'content':nodes})
+supplements=chunkmap(ROOT/'scripts/supplemental-notes')
+for key,body in supplements.items():
+ mapping,title=key.split(' | ',1);parent,slug=mapping.split('#',1);assert parent in parents,parent
+ item={'slug':parent.rsplit('/',1)[0]+'/'+slug,'title':title,'kind':'延伸詳讀'}
+ parents[parent][1].append(item)
+ allpages.append({**item,'parent':parent,'content':extra_fragments(body,'supplement-')})
+assert set(disease_completion)=={k.split(' | ')[0] for k in diseases if not any(x in k for x in ['#diabetic-ketoacidosis |','#hyperosmolar-hyperglycemic-state |','#adrenal-insufficiency |'])}, 'missing disease expansion'
 for entry in allpages:
  parent=entry['parent'];source=parents[parent][0];doc=deepcopy(source);slug=entry['slug'];filename=slug.split('/')[-1]+'.html';cat=slug.split('/')[0];parentfile=parent.split('/')[-1]+'.html'
  doc.xpath('//title')[0].text=entry['title']+'｜'+CATS[cat]+'｜臨床醫學知識整理';doc.xpath('//h1')[0].text=entry['title']
@@ -59,11 +78,13 @@ for entry in allpages:
  article=doc.xpath('//div[@class="article-body"]')[0];article.clear();article.set('class','article-body')
  article.append(html.fragment_fromstring(f'<div class="back-row"><a href="{parentfile}">回本章目錄</a><a href="index.html">回{E(CATS[cat])}</a></div>'))
  for node in entry['content']:article.append(deepcopy(node))
+ if cat=='gastroenterology':
+  article.append(html.fragment_fromstring('<div class="source-note"><h3>講義與消化手冊的接續閱讀</h3><p>講義用於國考主題與比較；消化手冊補充症狀、影像、內視鏡、營養與病房處置。手冊保留原版資料，治療更新需與本頁來源版本併讀。</p><div class="back-row"><a href="manual-index.html">手冊完整章節與頁碼</a><a href="symptoms/index.html">症狀評估</a><a href="procedures/index.html">檢查與處置</a><a href="hepatology/index.html">肝病詳讀</a><a href="luminal/index.html">胃腸詳讀</a></div></div>'))
  refs=deepcopy(source.xpath('//*[@id="references"]')[0]);refs.set('class','source-note')
  for n in refs.xpath('.//*[@data-detailed-notes]'):n.getparent().remove(n)
  for p in refs.xpath('./p'):
   if '本頁對應章節' in ''.join(p.itertext()):p.text=''.join(p.itertext()).replace('本頁對應章節導讀位置為','本章來源範圍為')+' 此為整章範圍，不代表這一小項逐頁對應。'
-  elif '核對日' in ''.join(p.itertext()):p.text='依講義主題重寫與補充病生理、判讀、治療選擇及考點；不逐字轉載講義或指引，不聲稱收錄全部歷屆試題。'
+  elif '核對日' in ''.join(p.itertext()):p.text='2026/10/06 按小項補充病生理、判讀、治療選擇、監測及原創情境；不逐字轉載講義或指引，不聲稱收錄全部歷屆試題。'
  sources=json.loads((ROOT/'scripts/detail-sources.json').read_text()).get(parent,[])
  if parent=='cardiology/heart-failure-structure':sources=sources+[['ACC/AHA 2020 瓣膜病：本頁介入架構採此版本','https://www.acc.org/Guidelines/Guidelines/2020/12/17/14/24/Valvular-Heart-Disease']]
  refs.append(html.fragment_fromstring('<div><h3>來源用途與版本</h3><p>講義提供基礎與國考主題；下列指引支援其對應診斷或治療主題，並非每一個段落都來自同一份指引。舊題與新版門檻不同時，按題目指定版本作答。</p>'+('<ul>'+''.join(f'<li><a href="{E(url,quote=True)}" target="_blank" rel="noopener">{E(label)}</a></li>' for label,url in sources)+'</ul>' if sources else '<p>本小項補充基礎病理、判讀與鑑別；個別疾病的治療更新請併讀本章列出的指引補充。</p>')+'</div>'));article.append(refs)
@@ -111,9 +132,10 @@ for path in sorted(ROOT.rglob('*.html')):
  for node in main[0].xpath('.//aside|.//footer|.//script|.//button|.//div[contains(@class,"page-tools")]|.//nav[@class="chapter-pager"]'):node.getparent().remove(node)
  search.append(dict(url=rel,title=title,trail=trail,specialty=specialty,text=re.sub(r'\s+',' ',' '.join(main[0].itertext())).strip()))
 (ROOT/'assets/search-index.json').write_text(json.dumps(search,ensure_ascii=False,separators=(',',':')))
-report=dict(sectionPages=len(extensions),diseasePages=len(diseases),leafPages=len(allpages),newCharacters=sum(len(s) for s in extensions.values())+sum(len(s) for s in diseases.values()),searchPages=len(search),pages=[{k:v for k,v in x.items() if k!='content'} for x in allpages])
+report=dict(sectionPages=len(extensions),diseasePages=len(diseases),supplementalPages=len(supplements),leafPages=len(allpages),newCharacters=sum(len(s) for s in extensions.values())+sum(len(s) for s in diseases.values()),clinicalCompletionPages=len(completion)+len(disease_completion),clinicalCompletionCharacters=sum(map(len,completion.values()))+sum(map(len,disease_completion.values())),searchPages=len(search),pages=[{k:v for k,v in x.items() if k!='content'} for x in allpages])
 (ROOT/'scripts/leaf-pages-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='pages'},ensure_ascii=False))
 # Detailed chapters are authoritative overrides; preserve them on future rebuilds.
 import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/'scripts/build_manual_completion.py')],check=True)
 if (ROOT/'scripts/build_textbook_pages.py').exists():
  subprocess.run([sys.executable,str(ROOT/'scripts/build_textbook_pages.py')],check=True)

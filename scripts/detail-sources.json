@@ -27,6 +27,10 @@
     [
       "ESC 2025 Myocarditis／Pericarditis：心包疾病延伸",
       "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/myocarditis-and-pericarditis"
+    ],
+    [
+      "ESC 2020 成人先天性心臟病：分流、PVR 與介入",
+      "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/adult-congenital-heart-disease/"
     ]
   ],
   "pulmonology/physiology-airways": [
@@ -41,6 +45,10 @@
     [
       "GOLD：spirometry 診斷標準",
       "https://goldcopd.org/spirometry-quick-guide/"
+    ],
+    [
+      "ERS 2025 成人支氣管擴張指引",
+      "https://publications.ersnet.org/content/erj/66/6/2501126"
     ]
   ],
   "pulmonology/infection-interstitial": [
@@ -85,6 +93,10 @@
     [
       "ACG 2024 H. pylori 指引摘要",
       "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/"
+    ],
+    [
+      "ACG 2025 成人 UC：官方 guideline highlights",
+      "https://webfiles.gi.org/GuidelineHighlights/UC-highlights-final.pdf"
     ]
   ],
   "gastroenterology/exam-hepatobiliary": [
@@ -95,12 +107,24 @@
     [
       "AASLD 2021：ascites／SBP／HRS；HRS 與 ADQI/ICA 2024 差異另註",
       "https://www.aasld.org/practice-guidelines/diagnosis-evaluation-and-management-ascites-spontaneous-bacterial-peritonitis"
+    ],
+    [
+      "AASLD／IDSA 2025 HBV 治療更新；不得沿用手冊舊 APASL 門檻為唯一規則",
+      "https://www.idsociety.org/practice-guideline/hepatitis-b/hepatitis-b/"
+    ],
+    [
+      "AASLD／IDSA HCV：未治療、無肝硬化成人簡化療程",
+      "https://www.hcvguidelines.org/guidance/simplified-hcv-treatment-for-treatment-naive-adults-without-cirrhosis/"
     ]
   ],
   "infectious-disease/syndrome-sepsis": [
     [
-      "SSC 2021：本頁敗血症初期處置版本",
+      "SSC 2021：舊版及歷年題目比較；本輪治療更新見 2026",
       "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021"
+    ],
+    [
+      "SSC 2026 成人敗血症與休克：正式新版、建議強度與適用條件",
+      "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
     ]
   ],
   "rheumatology/connective-tissue": [
@@ -141,6 +165,14 @@
     [
       "國健署：癌症篩檢完整方案",
       "https://www.hpa.gov.tw/211/s"
+    ],
+    [
+      "疾管署：成人預防接種建議時程（隨當期更新）",
+      "https://www.cdc.gov.tw/Category/Page/MoZgDU5xEilvKbL54nUTEg"
+    ],
+    [
+      "CDC Yellow Book 2026：旅遊與返國病人評估",
+      "https://www.cdc.gov/yellow-book/hcp/post-travel-evaluation/post-travel-evaluation-of-the-ill-traveler.html"
     ]
   ],
   "hematology/coagulation-thrombosis": [
@@ -177,12 +209,44 @@
     [
       "Endocrine Society 2015：Cushing 治療",
       "https://www.endocrine.org/clinical-practice-guidelines/treatment-of-cushing-syndrome"
+    ],
+    [
+      "Endocrine Society PPGL：生化評估專題（非整章治療指引）",
+      "https://www.endocrine.org/journals/endocrine-reviews/biochemical-assessment-of-ppgl"
+    ],
+    [
+      "Endocrine Society 2014 PPGL 指引發布與適用主題",
+      "https://support.endocrine.org/news-and-advocacy/news-room/2014/experts-recommend-blood-urine-testing-to-diagnose-rare-adrenal-tumors"
     ]
   ],
   "cardiology/hypertension-lipids": [
     [
       "Endocrine Society 2025：Primary Aldosteronism 篩檢與分型",
       "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+    ],
+    [
+      "ACC／AHA 2025 成人高血壓更新",
+      "https://www.acc.org/guidelines/guidelines/2025/08/14/10/42/high-blood-pressure-in-adults-2025"
+    ]
+  ],
+  "family-medicine/communication-geriatric-palliative": [
+    [
+      "衛福部：病人自主權利法施行與預立醫療決定程序",
+      "https://mohw.gov.tw/cp-2704-44221-1.html"
+    ],
+    [
+      "WHO 青少年健康：照護可近性與保密",
+      "https://www.who.int/health-topics/adolescent-health"
+    ],
+    [
+      "CDC／NIOSH 職業暴露控制階層",
+      "https://www.cdc.gov/niosh/hierarchy-of-controls/index.html"
+    ]
+  ],
+  "pulmonology/critical-pleura-cancer": [
+    [
+      "ESC／ERS 2022 肺高壓：定義、分群與血流動力",
+      "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/pulmonary-hypertension/"
     ]
   ]
 }

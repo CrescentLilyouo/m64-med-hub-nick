@@ -1,0 +1,174 @@
+{
+  "pages": [
+    {
+      "slug": "gastroenterology/diagnostics/imaging",
+      "characters": 398,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/procedures/hp-intervention",
+      "characters": 378,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/nutrition",
+      "characters": 349,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/hepatology/liver-injury",
+      "characters": 705,
+      "sections": 2,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/hepatology/hcc-transplant",
+      "characters": 518,
+      "sections": 2,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/biliary/biliary-disease",
+      "characters": 372,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/acute-surgical",
+      "characters": 337,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/postgastrectomy",
+      "characters": 374,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/gi-cancers",
+      "characters": 361,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/pancreas/pancreatic-cancer",
+      "characters": 394,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/basics/physical-exam",
+      "characters": 375,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/procedures/endoscopy",
+      "characters": 338,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/colorectal",
+      "characters": 306,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/abdominal-pain-nausea",
+      "characters": 327,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/bowel-habit",
+      "characters": 399,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/dysphagia",
+      "characters": 413,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/gi-bleeding",
+      "characters": 373,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/symptoms/jaundice-ascites",
+      "characters": 573,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/diagnostics/liver-labs",
+      "characters": 438,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/hepatology/viral-hepatitis",
+      "characters": 573,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/hepatology/cirrhosis",
+      "characters": 395,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/pancreas/pancreatitis",
+      "characters": 354,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/upper-gi",
+      "characters": 585,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    },
+    {
+      "slug": "gastroenterology/luminal/ibd-ibs",
+      "characters": 436,
+      "sections": 1,
+      "tables": 1,
+      "cases": 1
+    }
+  ],
+  "count": 24,
+  "characters": 10071
+}

@@ -37,7 +37,7 @@ for c in chapters:
     back = deepcopy(article.xpath('./div[@class="back-row"]')[0])
     pager = deepcopy(article.xpath('./nav[@class="chapter-pager"]')[0])
     article.clear(); article.set('class', 'article-body'); article.append(back)
-    article.append(fragment('<div class="source-note textbook-status"><strong>詳細章節稿 · 2026/10/06</strong><p>已展開定義、機轉、診斷、鑑別、治療、追蹤與情境解析。歷屆題目逐題對照及全考綱涵蓋仍待核對。</p><a href="../coverage.html">查看各科內容與缺漏 →</a></div>'))
+    article.append(fragment('<div class="source-note textbook-status"><strong>詳細章節稿 · 2026/10/06</strong><p>已展開定義、機轉、診斷、鑑別、治療、追蹤與情境解析。歷屆題目逐題對照及全考綱涵蓋仍待核對。</p><a href="../coverage.html">查看各科內容與核對範圍 →</a></div>'))
     for node in html.fragments_fromstring(markup):
         article.append(node)
     refs = '<section class="section source-note" id="references"><h2>來源、版本與尚待補充</h2><p>教材架構：使用者提供的《國考分科詳解—醫學（三）》2020 年版，' + E(c['book']) + '。PDF 頁碼從封面計算。基礎機轉與國考概念依教材重新組織並補充解釋，不逐字轉載。</p><p>本章指引核對日：2026/10/06。數值更新依下列指定版本；不同文件的診斷及解除標準分開說明。情境解析為原創練習。</p><ul>' + ''.join('<li><a href="' + E(url, quote=True) + '" target="_blank" rel="noopener">' + E(label) + '</a></li>' for label, url in c['sources']) + '</ul><p>仍待補充：完整歷屆題號與更正答案逐題對照、兒童及特殊族群的獨立章節，以及新版正式考綱逐項映射。詳細稿不等於全國考內容已完成。</p></section>'
@@ -72,13 +72,13 @@ index = html.fromstring((ROOT / 'medicine/index.html').read_text())
 for n in index.xpath('//*[@data-coverage-link]'):
     n.getparent().remove(n)
 hero = index.xpath('//div[@class="page-hero"]')[0]
-hero.addnext(fragment('<section class="section" data-coverage-link="true"><h2>國考複習：閱讀範圍與詳細章節</h2><p>目前以四冊醫學（三）講義為基礎。從分科进入章節；先看涵蓋清單，確認哪些已補成詳細稿、哪些仍需擴寫。</p><div class="back-row"><a href="coverage.html">各科內容與缺漏</a><a href="endocrinology/diabetic-ketoacidosis.html">DKA 詳細章</a><a href="endocrinology/hyperosmolar-hyperglycemic-state.html">HHS 詳細章</a><a href="endocrinology/adrenal-insufficiency.html">腎上腺不足詳細章</a></div></section>'))
+hero.addnext(fragment('<section class="section" data-coverage-link="true"><h2>國考複習：閱讀範圍與詳細章節</h2><p>目前以四冊醫學（三）講義為基礎。從分科进入章節；先看涵蓋清單，確認各小項的整理範圍、來源版本與仍待全題核對的部分。</p><div class="back-row"><a href="coverage.html">各科內容與核對範圍</a><a href="endocrinology/diabetic-ketoacidosis.html">DKA 詳細章</a><a href="endocrinology/hyperosmolar-hyperglycemic-state.html">HHS 詳細章</a><a href="endocrinology/adrenal-insufficiency.html">腎上腺不足詳細章</a></div></section>'))
 save(ROOT / 'medicine/index.html', index)
 
 # Overall scope uses the official subject groupings. Detailed 116 syllabus
 # mapping remains explicitly pending while the official document is unavailable.
 scope = [
-    ['醫學（三）', '內科、家庭醫學及相關臨床案例、醫學倫理', '四冊講義已有章節與分頁；本輪 3 項詳細稿，其餘逐章補深。'],
+    ['醫學（三）', '內科、家庭醫學及相關臨床案例、醫學倫理', '十個分科的現有講義小項與疾病頁已全面擴寫，消化手冊另做整合；歷屆題號與新版考綱仍待完整映射。'],
     ['醫學（四）', '小兒科、皮膚科、神經科、精神科', '尚未建立完整教材；不得以內科相關頁面視為全科已涵蓋。'],
     ['醫學（五）', '外科、骨科、泌尿科', '尚未建立完整教材。'],
     ['醫學（六）', '麻醉科、眼科、耳鼻喉科、婦產科、復健科', '尚未建立完整教材。'],
@@ -87,7 +87,7 @@ gaps = {
     'cardiology': '高血壓與次發性病因、ACS、完整 ECG 判讀、心衰竭分型與藥物、感染性心內膜炎、心肌及心包病的完整診療流程。',
     'pulmonology': '氣喘、COPD 分階治療、肺炎與結核、各類 ILD、肺栓塞機率與抗凝、ARDS 與呼吸器、肺癌及肋膜疾病。',
     'gastroenterology': '逐一核對國考講義與消化手冊：食道、胃腸、IBD、出血、病毒性肝炎、肝硬化、肝膽胰疾病；現有手冊分頁不代表逐項考綱已對齊。',
-    'endocrinology': '下一批：Graves、甲狀腺低下、甲狀腺炎、甲狀腺風暴、Cushing、原發性醛固酮過多。仍需補垂體、糖尿病常規治療與慢性併發症、鈣骨與性腺。',
+    'endocrinology': 'Graves、甲狀腺低下、甲狀腺炎、甲狀腺風暴、Cushing、原發性醛固酮過多、嗜鉻細胞瘤、垂體、糖尿病常規治療與慢性併發症、鈣骨與性腺。',
     'nephrology': '完整酸鹼例題、各類電解質與 RTA、AKI／CKD、個別腎絲球疾病、透析適應症與併發症、移植。',
     'infectious-disease': '各感染症候群、採檢與抗菌決策、藥物劑量適用情境、HIV／病毒、黴菌及寄生蟲、耐藥與特殊宿主。',
     'rheumatology': 'SLE、RA、個別結締組織病、血管炎、脊椎關節炎、結晶關節炎、過敏與免疫學。',
@@ -99,10 +99,10 @@ coverage = deepcopy(index)
 main = coverage.xpath('//main')[0]
 footer = deepcopy(main.xpath('./footer')[0]); main.clear(); main.set('id', 'main-content'); main.set('class', 'page-shell'); main.set('tabindex', '-1')
 main.append(fragment('<div class="breadcrumbs"><a href="../index.html">首頁</a> › <a href="index.html">內科</a> › 國考內容與缺漏</div>'))
-main.append(fragment('<div class="page-hero"><h1>國考複習網：內容與缺漏清單</h1><p>以現有臨床講義為起點，逐章補成可連續閱讀的詳細教材。這份清單區分「已有分頁」和「內容已充分展開」。</p></div>'))
-main.append(fragment('<section class="section"><h2>目前可以怎麼讀</h2><p>先由分科目錄進入主題，再選獨立小項；詳細章依定義、機轉、診斷、鑑別、治療、追蹤與情境解析排列。頁面目錄可定位，前後項導覽可接續閱讀。</p><p><strong>本輪已展開 3 個詳細章節稿，其餘 175 個講義小項仍需補深。</strong>這是現有 178 個分頁的編寫狀態，並非全國考完成率。消化手冊與其他既有頁面另保留於原分類。</p><p>尚未完成所有科目、所有疾病或所有歷屆題目；詳細稿也仍待逐題對照與完整考綱映射。</p></section>'))
+main.append(fragment('<div class="page-hero"><h1>國考複習網：內容與缺漏清單</h1><p>以現有臨床講義為起點，逐章補成可連續閱讀的詳細教材。每個分科列出實際小項、整理層次與後續核對範圍；分頁數不是國考完成率。</p></div>'))
+main.append(fragment('<section class="section"><h2>目前可以怎麼讀</h2><p>先由分科目錄進入主題，再選獨立小項；詳細章依定義、機轉、診斷、鑑別、治療、追蹤與情境解析排列。頁面目錄可定位，前後項導覽可接續閱讀。</p><p><strong>本輪已擴寫全部 139 個既有講義小項、36 個疾病頁，保留 DKA、HHS、腎上腺不足 3 個長篇詳細章，另新增 8 個延伸頁；共 186 個獨立閱讀頁。</strong>消化手冊 24 個既有內容頁也補入講義、判讀或處置整合。這是目前教材架構的編寫範圍，不代表全部國考知識或每本書逐段逐字已收錄。</p><p>本輪完成的是既有內科與家醫架構的全面擴寫版，部分疾病共置於同一小項，閱讀深度不同。完整歷屆題號、更正答案與 116 年正式考綱的逐條映射尚未完成；其他國考科目也不在本輪範圍。</p></section>'))
 cards = ''.join('<a class="topic-link" href="' + c['slug'] + '.html"><span class="tag">詳細章節稿</span><h3>' + E(c['title']) + '</h3><p>11 節：從病理機轉、判讀到治療與原創情境解析。</p><span class="go">開始詳讀 →</span></a>' for c in chapters)
-main.append(fragment('<section class="section"><h2>本轮詳細章節</h2><div class="topic-grid">' + cards + '</div></section>'))
+main.append(fragment('<section class="section"><h2>較長的完整流程章節</h2><div class="topic-grid">' + cards + '</div></section>'))
 main.append(fragment('<section class="section" id="exam-scope"><h2>第二階段科目範圍與尚缺教材</h2><p>目前工作範圍依現有醫學（三）臨床講義與二階補充要求建立。下表依考選部 115 年考試科目表列出科目群；不是新版命題大綱的全部細項。</p>' + table(['科目群', '官方科目範圍', '網站目前狀態'], [[E(x) for x in r] for r in scope]) + '<p>考選部公告醫師新版命題大綱自民國 116 年第一次考試起實施。官方細項文件尚待完整取得與逐項比對，因此此頁不宣稱已完成 116 年大綱對照。</p><p><a href="https://wwwc.moex.gov.tw/main/exam/FileHandler.ashx?File=3997&amp;MCode=7744&amp;PCode=5113&amp;f=115&amp;t=P" target="_blank" rel="noopener">考選部 115 年科目表</a> · <a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&amp;menu_id=154&amp;sub_menu_id=613" target="_blank" rel="noopener">官方命題大綱與適用版本</a></p></section>'))
 main.append(fragment('<section class="section"><h2>怎樣才算章節已充分整理</h2><p>逐項核對以下內容，再判定完成。頁數、字數及分頁數只用來管理內容，不代替涵蓋審查。</p>' + table(['檢查面向', '章節應有內容'], [[E(a), E(b)] for a, b in [
     ('知識', '定義、分類、病因、危險因子與可推理的病生理。'),
@@ -117,9 +117,9 @@ for cat, label in CATS.items():
     rows = []
     for p in entries:
         title = expanded[p['slug']]['title'] if p['slug'] in expanded else p['title']
-        rows.append(['<a href="' + p['slug'] + '.html">' + E(title) + '</a>', '詳細章節稿；仍待全題對照' if p['slug'] in expanded else '基礎稿；待詳細擴寫'])
-    main.append(fragment('<section class="section" id="scope-' + cat + '"><h2>' + E(label) + '</h2><p><a href="' + cat + '/index.html">進入本科目錄 →</a></p><p><strong>待補方向：</strong>' + E(gaps[cat]) + '</p><details class="coverage-list"><summary>展開 ' + str(len(entries)) + ' 項內容與編寫狀態</summary>' + table(['現有小項', '編寫狀態'], rows) + '</details></section>'))
-main.append(fragment('<section class="section source-note"><h2>教材盤點與核對狀態</h2><p>四冊《國考分科詳解—醫學（三）》2020 年版已建立分類與 PDF 章節範圍，<a href="book-index.html">查看四冊對照</a>。書內收錄較舊考題，不能視為含所有新年度題目。</p><p>《11409 消化內科工作手冊》已有 <a href="gastroenterology/manual-index.html">手冊主題目錄</a>；與國考講義的逐節合併、重複內容及缺漏仍待逐项核對。</p><p>更新日期：2026/10/06。科目表與大綱作為範圍來源，疾病指引在各詳細章末列出。這份清單會隨實際內容更新，不以新增頁面自動升級為完成。</p></section>'))
+        rows.append(['<a href="' + p['slug'] + '.html">' + E(title) + '</a>', '詳細章節稿；仍待全題對照' if p['slug'] in expanded else '小項擴寫稿：核心、判讀／處置、比較與情境' if p['kind']!='延伸詳讀' else '延伸詳讀：補足跨章主題'])
+    main.append(fragment('<section class="section" id="scope-' + cat + '"><h2>' + E(label) + '</h2><p><a href="' + cat + '/index.html">進入本科目錄 →</a></p><p><strong>整理主題：</strong>' + E(gaps[cat]) + '</p><details class="coverage-list"><summary>展開 ' + str(len(entries)) + ' 項內容與編寫狀態</summary>' + table(['現有小項', '編寫狀態'], rows) + '</details></section>'))
+main.append(fragment('<section class="section source-note"><h2>教材盤點與核對狀態</h2><p>四冊《國考分科詳解—醫學（三）》2020 年版已建立分類與 PDF 章節範圍，<a href="book-index.html">查看四冊對照</a>。書內收錄較舊考題，不能視為含所有新年度題目。</p><p>《11409 消化內科工作手冊》已有 <a href="gastroenterology/manual-index.html">手冊主題目錄</a>；本輪已在 24 個內容頁加入臨床整合並連回國考章節；原手冊保留頁碼與原版內容。圖像、所有段落及題號的逐條映射仍未完整建立。</p><p>更新日期：2026/10/06。科目表與大綱作為範圍來源，疾病指引在各詳細章末列出。這份清單會隨實際內容更新，不以新增頁面自動升級為完成。</p></section>'))
 main.append(footer)
 coverage.xpath('//title')[0].text = '國考內容與缺漏｜臨床醫學知識整理'
 coverage.xpath('//meta[@name="description"]')[0].set('content', '國考複習網的教材範圍、逐項編寫狀態、詳細章節與尚待補齊的科目。')
