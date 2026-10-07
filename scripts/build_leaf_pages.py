@@ -74,10 +74,14 @@ for entry in allpages:
  crumb=doc.xpath('//div[@class="breadcrumbs"]')[0];crumb.clear();crumb.set('class','breadcrumbs');crumb.text=''
  crumb.append(html.fragment_fromstring(f'<span><a href="../../index.html">首頁</a> › <a href="../index.html">內科</a> › <a href="index.html">{E(CATS[cat])}</a> › <a href="{parentfile}">{E(source_titles[parent])}</a> › {E(entry["title"])}</span>'))
  for n in doc.xpath('//*[@data-leaf-directory]'):n.getparent().remove(n)
- for n in doc.xpath('//*[contains(@class,"updated")]'):n.text='逐項擴充 2026/10/06；各來源版本見頁尾'
+ for n in doc.xpath('//*[contains(@class,"updated")]'):n.text=('第一型／第二型比較更新 2026/10/07；來源版本見頁尾' if slug=='endocrinology/diabetes-section-01' else ('糖尿病用藥更新 2026/10/07；來源版本見頁尾' if slug=='endocrinology/diabetes-section-02' else '逐項擴充 2026/10/06；各來源版本見頁尾'))
  article=doc.xpath('//div[@class="article-body"]')[0];article.clear();article.set('class','article-body')
  article.append(html.fragment_fromstring(f'<div class="back-row"><a href="{parentfile}">回本章目錄</a><a href="index.html">回{E(CATS[cat])}</a></div>'))
  for node in entry['content']:article.append(deepcopy(node))
+ if slug in ['endocrinology/diabetes-section-01','endocrinology/diabetes-section-02']:
+  related='diabetes-section-02.html#chapter-05' if slug.endswith('01') else 'diabetes-section-01.html#chapter-05'
+  label='第一型／第二型用藥、胰島素與共病選藥' if slug.endswith('01') else '第一型／第二型完整比較與分型判讀'
+  article.insert(1,html.fragment_fromstring(f'<div class="source-note"><a href="{related}">{E(label)} →</a></div>'))
  if cat=='gastroenterology':
   article.append(html.fragment_fromstring('<div class="source-note"><h3>講義與消化手冊的接續閱讀</h3><p>講義用於國考主題與比較；消化手冊補充症狀、影像、內視鏡、營養與病房處置。手冊保留原版資料，治療更新需與本頁來源版本併讀。</p><div class="back-row"><a href="manual-index.html">手冊完整章節與頁碼</a><a href="symptoms/index.html">症狀評估</a><a href="procedures/index.html">檢查與處置</a><a href="hepatology/index.html">肝病詳讀</a><a href="luminal/index.html">胃腸詳讀</a></div></div>'))
  refs=deepcopy(source.xpath('//*[@id="references"]')[0]);refs.set('class','source-note')
