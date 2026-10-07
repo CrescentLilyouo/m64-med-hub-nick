@@ -2,7 +2,7 @@
   "source": "Oncall-survival-guide-Ver2.pdf",
   "edition": "2020",
   "pages": 111,
-  "status": "classification-and-crosslinks",
+  "status": "progressive-detailed-integration",
   "topics": [
     {
       "category": "renal",
@@ -20,7 +20,10 @@
       "tags": [
         "內分泌",
         "體液調控"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/sodium/hypernatremia.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "renal",
@@ -39,7 +42,10 @@
         "胸腔",
         "內分泌",
         "藥物"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/sodium/hyponatremia.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "renal",
@@ -57,7 +63,10 @@
       "tags": [
         "心血管",
         "藥物"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/potassium-minerals-section-02.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "renal",
@@ -76,7 +85,10 @@
         "心血管",
         "腸胃",
         "藥物"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/potassium-minerals-section-03.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "renal",
@@ -93,7 +105,8 @@
       "tags": [
         "胸腔",
         "糖尿病急症"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "renal",
@@ -111,7 +124,8 @@
         "胸腔",
         "腸胃",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "renal",
@@ -129,7 +143,8 @@
         "內分泌",
         "泌尿",
         "老年"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "renal",
@@ -147,7 +162,8 @@
         "泌尿",
         "循環",
         "重症"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "endocrine",
@@ -166,7 +182,10 @@
         "感染",
         "腎臟",
         "酸鹼"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/endocrinology/hyperglycemia.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "endocrine",
@@ -184,7 +203,10 @@
         "神經",
         "肝腎功能",
         "藥物"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/endocrinology/hypoglycemia.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "endocrine",
@@ -202,7 +224,10 @@
         "腫瘤",
         "腎臟",
         "骨代謝"
-      ]
+      ],
+      "status": "detailed-integrated",
+      "detail_url": "medicine/endocrinology/calcium-metabolism-section-02.html",
+      "reviewed": "2026-10-07"
     },
     {
       "category": "endocrine",
@@ -220,7 +245,8 @@
         "腎臟",
         "神經",
         "心血管"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "cardiovascular",
@@ -237,7 +263,8 @@
       "tags": [
         "神經",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "cardiovascular",
@@ -255,7 +282,8 @@
         "出血",
         "過敏",
         "重症"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "cardiovascular",
@@ -273,7 +301,8 @@
         "神經",
         "腎臟",
         "妊娠"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "cardiovascular",
@@ -292,7 +321,8 @@
         "電解質",
         "藥物",
         "急救"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "cardiovascular",
@@ -311,7 +341,8 @@
         "胸腔",
         "腸胃",
         "急診"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "respiratory",
@@ -331,7 +362,8 @@
         "心血管",
         "感染",
         "重症"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "hematology",
@@ -348,7 +380,8 @@
         "腸胃出血",
         "腎臟",
         "腫瘤"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "hematology",
@@ -365,7 +398,8 @@
         "肝臟",
         "感染",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "hematology",
@@ -382,7 +416,8 @@
         "胸腔",
         "過敏",
         "感染"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "gastrointestinal",
@@ -400,7 +435,8 @@
         "循環",
         "血液",
         "肝臟"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "gastrointestinal",
@@ -418,7 +454,8 @@
         "感染",
         "腎臟",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "gastrointestinal",
@@ -437,7 +474,8 @@
         "感染",
         "泌尿",
         "婦科"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "infection",
@@ -457,7 +495,8 @@
         "腹腔",
         "皮膚",
         "循環"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "neurology",
@@ -475,7 +514,8 @@
       "tags": [
         "心血管",
         "復健"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "neurology",
@@ -493,7 +533,8 @@
         "內分泌",
         "電解質",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "neurology",
@@ -510,7 +551,8 @@
       "tags": [
         "感染",
         "急診"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "neurology",
@@ -530,7 +572,8 @@
         "感染",
         "肝腎",
         "老年"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "neurology",
@@ -548,7 +591,8 @@
         "精神",
         "老年",
         "藥物"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "allergy",
@@ -567,7 +611,8 @@
         "皮膚",
         "藥物",
         "循環"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "limb",
@@ -587,7 +632,8 @@
         "感染",
         "骨科",
         "風濕"
-      ]
+      ],
+      "status": "classification-only"
     },
     {
       "category": "medications",
@@ -603,7 +649,10 @@
         "老年",
         "腸胃",
         "藥理"
-      ]
+      ],
+      "status": "classification-only"
     }
-  ]
+  ],
+  "completed_topics": 7,
+  "updated": "2026-10-07"
 }
