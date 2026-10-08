@@ -106,7 +106,9 @@
         "胸腔",
         "糖尿病急症"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/acidemia.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "renal",
@@ -125,7 +127,9 @@
         "腸胃",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/nephrology/alkalemia.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "renal",
@@ -246,7 +250,9 @@
         "神經",
         "心血管"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/endocrinology/calcium-metabolism-section-03.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "cardiovascular",
@@ -381,7 +387,9 @@
         "腎臟",
         "腫瘤"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/hematology/anemia-section-01.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "hematology",
@@ -399,7 +407,9 @@
         "感染",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/hematology/coagulation-thrombosis-section-01.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "hematology",
@@ -417,7 +427,9 @@
         "過敏",
         "感染"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/hematology/malignancy-transfusion-section-05.html",
+      "reviewed": "2026-10-08"
     },
     {
       "category": "gastrointestinal",
@@ -653,6 +665,6 @@
       "status": "classification-only"
     }
   ],
-  "completed_topics": 7,
-  "updated": "2026-10-07"
+  "completed_topics": 13,
+  "updated": "2026-10-08"
 }
