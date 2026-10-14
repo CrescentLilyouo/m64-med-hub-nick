@@ -148,7 +148,9 @@
         "泌尿",
         "老年"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/polyuria.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "renal",
@@ -270,7 +272,9 @@
         "神經",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/syncope.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "cardiovascular",
@@ -289,7 +293,9 @@
         "過敏",
         "重症"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/shock.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "cardiovascular",
@@ -308,7 +314,9 @@
         "腎臟",
         "妊娠"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/hypertension.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "cardiovascular",
@@ -369,7 +377,9 @@
         "感染",
         "重症"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/dyspnea.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "hematology",
@@ -527,7 +537,9 @@
         "心血管",
         "復健"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/stroke.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "neurology",
@@ -546,7 +558,9 @@
         "電解質",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/seizures.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "neurology",
@@ -624,7 +638,9 @@
         "藥物",
         "循環"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/rash.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "limb",
@@ -645,7 +661,9 @@
         "骨科",
         "風濕"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/leg-pain.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "medications",
@@ -662,9 +680,11 @@
         "腸胃",
         "藥理"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/symptom-medications.html",
+      "reviewed": "2026-10-14"
     }
   ],
-  "completed_topics": 13,
-  "updated": "2026-10-08"
+  "completed_topics": 23,
+  "updated": "2026-10-14"
 }
