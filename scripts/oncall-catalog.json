@@ -2,7 +2,7 @@
   "source": "Oncall-survival-guide-Ver2.pdf",
   "edition": "2020",
   "pages": 111,
-  "status": "progressive-detailed-integration",
+  "status": "complete-detailed-integration",
   "topics": [
     {
       "category": "renal",
@@ -169,7 +169,9 @@
         "循環",
         "重症"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/oliguria.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "endocrine",
@@ -336,7 +338,9 @@
         "藥物",
         "急救"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/arrhythmia.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "cardiovascular",
@@ -356,7 +360,9 @@
         "腸胃",
         "急診"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/chest-pain.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "respiratory",
@@ -458,7 +464,9 @@
         "血液",
         "肝臟"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/gi-bleeding.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "gastrointestinal",
@@ -477,7 +485,9 @@
         "腎臟",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/diarrhea.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "gastrointestinal",
@@ -497,7 +507,9 @@
         "泌尿",
         "婦科"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/abdominal-pain.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "infection",
@@ -518,7 +530,9 @@
         "皮膚",
         "循環"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/fever.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "neurology",
@@ -578,7 +592,9 @@
         "感染",
         "急診"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/headache.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "neurology",
@@ -599,7 +615,9 @@
         "肝腎",
         "老年"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/confusion.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "neurology",
@@ -618,7 +636,9 @@
         "老年",
         "藥物"
       ],
-      "status": "classification-only"
+      "status": "detailed-integrated",
+      "detail_url": "medicine/oncall/details/combativeness.html",
+      "reviewed": "2026-10-14"
     },
     {
       "category": "allergy",
@@ -685,6 +705,6 @@
       "reviewed": "2026-10-14"
     }
   ],
-  "completed_topics": 23,
+  "completed_topics": 33,
   "updated": "2026-10-14"
 }

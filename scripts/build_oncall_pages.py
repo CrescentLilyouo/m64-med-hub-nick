@@ -63,7 +63,7 @@ CATEGORIES=[
 ('symptom-medications','安眠藥、瀉劑與止痛藥','66–70','安眠藥（第 66 頁）：失眠評估、藥物種類與注意事項；瀉劑（第 67–68 頁）：便秘原因、藥物分類與選擇；止痛藥（第 69–70 頁）：疼痛評估、藥物分類、副作用與監測','老年、腸胃、藥理')])]
 OUT=ROOT/'medicine/oncall';OUT.mkdir(exist_ok=True)
 COMPLETED=sum(t.get('status')=='detailed-integrated' for t in PREVIOUS.values())
-NOTICE=f'<div class="source-note"><p>來源：Oncall-survival-guide-Ver2，2020 年版，共 111 頁。頁碼為原 PDF 頁碼。</p><p>全手冊 33 主題已分類；目前 {COMPLETED}／33 已整合詳細內容，其餘 {33-COMPLETED} 主題仍為分類摘要。各章來源版本與更新範圍見詳細專頁。</p></div>'
+NOTICE=('<div class="source-note"><p>來源：Oncall-survival-guide-Ver2，2020 年版，共 111 頁。</p><p>全手冊 33／33 主題已完成詳細整合，涵蓋原 PDF 第 3–110 頁。各章指引版本、治療監測與原文修正見專頁。</p></div>' if COMPLETED==33 else f'<div class="source-note"><p>全手冊 33 主題；目前 {COMPLETED}／33 已完成詳細整合，其餘仍為分類摘要。</p></div>')
 
 def links(paths):
  s=[]
@@ -94,10 +94,10 @@ for slug,title,dept,related,topics in CATEGORIES:
 assert len(catalog)==33 and len({x['id'] for x in catalog})==33
 body='<section class="section"><h2>依分類閱讀</h2><p>先選分類，再選主題；每項列出原書頁碼、內容範圍與跨科標籤。第 1–2 頁為目錄與前言，第 111 頁為參考資料。</p><div class="topic-grid">'+''.join(cards)+'</div></section><section class="section" id="all-topics"><h2>33 主題與頁碼對照</h2><div class="table-wrap"><table><thead><tr><th scope="col">主分類</th><th scope="col">主題</th><th scope="col">原書頁碼</th><th scope="col">跨科標籤</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div></section>'
 (OUT/'index.html').write_text(page('值班手冊分類｜33 主題','11 大類，整合症狀、異常數值、急症與常用藥章節的查閱入口。',body))
-(ROOT/'scripts/oncall-catalog.json').write_text(json.dumps(dict(source='Oncall-survival-guide-Ver2.pdf',edition='2020',pages=111,status='progressive-detailed-integration',completed_topics=COMPLETED,updated=STATE.get('updated'),topics=catalog),ensure_ascii=False,indent=2)+'\n')
+(ROOT/'scripts/oncall-catalog.json').write_text(json.dumps(dict(source='Oncall-survival-guide-Ver2.pdf',edition='2020',pages=111,status='complete-detailed-integration' if COMPLETED==33 else 'progressive-detailed-integration',completed_topics=COMPLETED,updated=STATE.get('updated'),topics=catalog),ensure_ascii=False,indent=2)+'\n')
 p=ROOT/'medicine/index.html';d=html.fromstring(p.read_text())
 for n in d.xpath('//*[@data-oncall-link]'): n.getparent().remove(n)
-d.xpath('//div[@class="page-hero"]')[0].addnext(html.fragment_fromstring('<section class="section" data-oncall-link="true"><h2>值班手冊：症狀、急症與用藥分類</h2><p>2020 年版手冊已依 11 大類整理全部 33 個主題，附原書頁碼、內容範圍及相關複習章節。</p><div class="back-row"><a href="oncall/index.html">進入值班手冊分類 →</a><a href="oncall/index.html#all-topics">33 主題與頁碼對照</a><a href="oncall/medications.html">常用藥分類</a></div></section>'))
+d.xpath('//div[@class="page-hero"]')[0].addnext(html.fragment_fromstring('<section class="section" data-oncall-link="true"><h2>值班手冊：症狀、急症與用藥分類</h2><p>2020 年版手冊已依 11 大類整理全部 33 個主題，詳細整合進度請見分類入口，各章附頁碼與指引版本。</p><div class="back-row"><a href="oncall/index.html">進入值班手冊分類 →</a><a href="oncall/index.html#all-topics">33 主題與頁碼對照</a><a href="oncall/medications.html">常用藥分類</a></div></section>'))
 p.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode',method='html'))
 # Refresh the same searchable-page schema as the main builder.
 search=[]
